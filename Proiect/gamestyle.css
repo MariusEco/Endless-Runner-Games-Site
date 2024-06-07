@@ -1,0 +1,137 @@
+.game {
+    width: 35vw;
+    height: 26vh; 
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+#character {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ff4500;
+    position: relative;
+    top: 150px;
+}
+
+.animate {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    70% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+#block {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 500px
+    }
+    100% {
+        left: -20px
+    }
+}
+
+#gameOverMsg {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5vw;
+    color: white;
+}
+
+#tryAgainBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5vw;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#tryAgainBtn:hover{
+    background-color: #e03e00;
+}
+
+#scoreDisplay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#playButton:hover{
+    background-color: #e03e00;
+}
+
+#commentsSection {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    max-width: 100%;
+    overflow: auto;
+}
+
+#commentsList {
+    list-style-type: none;
+}
+
+.delete-comment {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.delete-comment:hover{
+    background-color: #e03e00;
+}

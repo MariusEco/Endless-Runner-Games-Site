@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Name</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gamestyle.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">About</button>
+        <div class="dropdown-content">
+          <a href="concepts.html">Concepts</a>
+          <a href="history.html">History</a>
+        </div>
+      </div>
+      <a href="gallery.html">Games Gallery</a>
+      <a href="game.html">My Game</a>
+    </nav>
+  </header>
+  <main>
+    <h1>My Game</h1>
+    <div class="game" id="gameContainer" tabindex="0">
+      <span id="scoreDisplay">Score: <span id="scoreSpan">0</span></span>
+      <div id="character"></div>
+      <div id="block"></div>
+      <div id="gameOverMsg" class="hidden">Game Over<br><button id="tryAgainBtn">Try Again</button></div>
+      <button id="playButton">Play Game</button>
+    </div>
+
+    <div id="commentsSection">
+      <h2>Comments about the game</h2>
+      <form id="commentForm">
+        <input type="text" id="commentInput" placeholder="Add a comment" required>
+        <button type="submit">Post Comment</button>
+      </form>
+      <ul id="commentsList"></ul>
+    </div>
+  </main>
+  <footer>
+    <section id="contact">
+      <a href="https://github.com/MariusEco" target="_blank">
+        <img src="Images/github.png" alt="site not found" height="50" width="50">
+      </a>
+      <a href="https://www.linkedin.com/in/george-marius-ecobescu-0124142a0/" target="_blank">
+        <img src="Images/linked.png" alt="site not found" height="50" width="50">
+      </a>
+      <a href="https://www.instagram.com/eco_marius/" target="_blank">
+        <img src="Images/ig.png" alt="site not found" height="50" width="50">
+      </a>
+    </section>
+    <p>© 2024 Ecobescu George-Marius | All rights reserved</p>
+    <a href="#top">Click here to go back to the top of the page</a>
+  </footer>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="gamescript.js"></script>
+</body>
+
+</html>

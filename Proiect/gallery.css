@@ -1,0 +1,44 @@
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 10px; 
+}
+
+.image-grid .gallery {
+    flex: 40%;
+    border: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box; 
+}
+
+.image-grid .gallery img {
+    width: 100%;
+    height: auto; 
+    aspect-ratio: 16/9;
+    object-fit: fill;
+}
+
+.image-grid .gallery:hover {
+    border: 1px solid #777;
+}
+
+.image-grid .desc {
+    padding: 1em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 2vw; 
+    opacity: 0;
+}
+
+.image-grid .gallery:hover .desc {
+    opacity: 1;
+}

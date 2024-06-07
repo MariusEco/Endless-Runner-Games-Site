@@ -1,0 +1,97 @@
+article {
+    margin-bottom: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+article img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+    float: right;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+article img:hover {
+    transform: scale(1.05);
+}
+
+article>div {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    padding-right: 20px;
+}
+
+article a {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article::before {
+    content: "\25B6";
+    color: #ff4500;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+article::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ff4500;
+    margin-top: 20px;
+}
+/* style.css */
+form {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ff4500;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #e03e00;
+}
